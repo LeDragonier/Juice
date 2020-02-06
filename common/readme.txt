@@ -1,0 +1,1 @@
+Tento adresar slouzi pro vymenu creddential a tokenu mezi SoapUI a RF

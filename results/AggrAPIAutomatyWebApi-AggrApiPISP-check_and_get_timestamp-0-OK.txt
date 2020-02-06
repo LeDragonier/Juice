@@ -1,0 +1,7 @@
+Status: OK
+Time Taken: 101
+Size: 0
+Timestamp: Mon Feb 18 16:32:33 CET 2019
+TestStep: check_and_get_timestamp
+
+----------------- Messages ------------------------------

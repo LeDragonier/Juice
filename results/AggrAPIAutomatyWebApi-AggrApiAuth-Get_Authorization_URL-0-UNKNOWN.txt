@@ -1,0 +1,46 @@
+Status: UNKNOWN
+Time Taken: 138
+Size: 334
+Timestamp: Tue Feb 19 08:26:04 CET 2019
+TestStep: Get Authorization URL
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://www.csint.cz
+Method: GET
+StatusCode: 200
+URL: https://www.csint.cz/webapi/v1/psd2-aggregation/auth?callbackUri=http%3A%2F%2Flocalhost%3A8080&bank=5500&scope=aisp
+
+---------------- Request ---------------------------
+authorization: [3/fupabXlhDsFSYrUV5lLZpHArOhNn4Nhy5lHcpO3xdRgBFDU8yP7bw0DjKgyX6NbC]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+web-api-key: [baf293b7-b836-4eb2-b3e8-9df0462d0dc2]
+Host: [www.csint.cz]
+Accept-Encoding: [gzip,deflate]
+
+GET https://www.csint.cz/webapi/v1/psd2-aggregation/auth?callbackUri=http%3A%2F%2Flocalhost%3A8080&bank=5500&scope=aisp HTTP/1.1
+Accept-Encoding: gzip,deflate
+authorization: 3/fupabXlhDsFSYrUV5lLZpHArOhNn4Nhy5lHcpO3xdRgBFDU8yP7bw0DjKgyX6NbC
+web-api-key: baf293b7-b836-4eb2-b3e8-9df0462d0dc2
+Host: www.csint.cz
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Keep-Alive: [timeout=25]
+Transfer-Encoding: [chunked]
+Access-Control-Expose-Headers: [cz-transactionid]
+Server: [Apache]
+Content-Encoding: [gzip]
+Connection: [Keep-Alive]
+Vary: [Accept-Encoding,User-Agent]
+#status#: [HTTP/1.1 200 OK]
+Date: [Tue, 19 Feb 2019 07:26:04 GMT]
+cz-transactionId: [190219113627254]
+Content-Type: [application/json;charset=UTF-8]
+
+{"authUrl":"https://api.developer.rb.cz/psd2-rbcz-sandbox-oauth2-api/oauth2/authorize?response_type=code&client_id=a0f458bc-ca64-4965-8f52-f25c5e68a0c6&state=mU7whZjMQVijb01wqqmoNr4JeehRLORYW4e4qhfhavfKDjH7ugxnW_E3Isa8r8WDs1Wyf65UmNSD_UlRszAqhw&redirect_uri=https://www.csast.csas.cz/webapi/api/v1/tech-aggr-auth/callback&scope=AISP"}

@@ -1,0 +1,7 @@
+Status: OK
+Time Taken: 34
+Size: 0
+Timestamp: Tue Feb 19 08:26:05 CET 2019
+TestStep: Extract AuthTokenToFile
+
+----------------- Messages ------------------------------

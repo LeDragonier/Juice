@@ -1,0 +1,7 @@
+Status: OK
+Time Taken: 10
+Size: 0
+Timestamp: Mon Feb 18 16:32:32 CET 2019
+TestStep: Log AccessToken
+
+----------------- Messages ------------------------------

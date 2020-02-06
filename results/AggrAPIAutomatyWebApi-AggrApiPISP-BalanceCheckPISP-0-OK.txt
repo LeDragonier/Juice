@@ -1,0 +1,64 @@
+Status: OK
+Time Taken: 1073
+Size: 94
+Timestamp: Mon Feb 18 16:32:32 CET 2019
+TestStep: BalanceCheckPISP
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://www.csint.cz
+Method: POST
+StatusCode: 200
+URL: https://www.csint.cz/webapi/v1/psd2-aggregation/my/payments/balanceCheck?bank=0800
+
+---------------- Request ---------------------------
+authorization: [3/SN8H5ojISGVgfxz4LHE6s4waee1FZR5trz4YaacqAavGLrtkjFKrnIBBk02ql9G2]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+web-api-key: [baf293b7-b836-4eb2-b3e8-9df0462d0dc2]
+Host: [www.csint.cz]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [207]
+Content-Type: [application/json]
+
+POST https://www.csint.cz/webapi/v1/psd2-aggregation/my/payments/balanceCheck?bank=0800 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+authorization: 3/SN8H5ojISGVgfxz4LHE6s4waee1FZR5trz4YaacqAavGLrtkjFKrnIBBk02ql9G2
+web-api-key: baf293b7-b836-4eb2-b3e8-9df0462d0dc2
+Content-Length: 207
+Host: www.csint.cz
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+"exchangeIdentification": "123456",
+ 
+"debtorAccount": {
+"identification": {
+"iban": "CZ5108000000000102902339"
+},
+"currency" : "CZK"
+},
+"transactionDetails": {
+"currency": "CZK",
+"totalAmount": 997.99
+}
+}
+
+---------------- Response --------------------------
+Keep-Alive: [timeout=25]
+Transfer-Encoding: [chunked]
+Access-Control-Expose-Headers: [cz-transactionid]
+Server: [Apache]
+Content-Encoding: [gzip]
+Connection: [Keep-Alive]
+Vary: [Accept-Encoding,User-Agent]
+#status#: [HTTP/1.1 200 OK]
+Date: [Mon, 18 Feb 2019 15:32:32 GMT]
+cz-transactionId: [190218074021708]
+Content-Type: [application/json;charset=UTF-8]
+
+{"responseIdentification":"190218071469535","exchangeIdentification":123456,"response":"APPR"}

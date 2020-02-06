@@ -1,0 +1,1 @@
+https://api.developer.rb.cz/psd2-rbcz-sandbox-oauth2-api/oauth2/authorize?response_type=code&client_id=a0f458bc-ca64-4965-8f52-f25c5e68a0c6&state=mU7whZjMQVijb01wqqmoNr4JeehRLORYW4e4qhfhavfKDjH7ugxnW_E3Isa8r8WDs1Wyf65UmNSD_UlRszAqhw&redirect_uri=https://www.csast.csas.cz/webapi/api/v1/tech-aggr-auth/callback&scope=AISP

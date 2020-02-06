@@ -1,0 +1,51 @@
+Status: OK
+Time Taken: 808
+Size: 309
+Timestamp: Tue Feb 19 08:26:03 CET 2019
+TestStep: Swap authorization code for refresh token
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://bezpecnost.csast.csas.cz
+Method: POST
+StatusCode: 200
+URL: https://bezpecnost.csast.csas.cz/mep/fs/fl/oauth2/token?grant_type=authorization_code&client_id=slospo_b24&client_secret=AFuGQThqSVigAmbA0AgQLXZ22Qj6YvMd&code=2%2FpBeoC36sTjlL6zpEfsss8ZAjsWnzfB6BWlXdF83xp3pgQr6DknNrzHeLs3Yi4BV7&redirect_uri=https%3A%2F%2Fb244.apptest.slsp.sk%2Fweb%2Fmultibanking%2Fredirect
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+content-type: [application/x-www-form-urlencoded]
+Host: [bezpecnost.csast.csas.cz]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+
+POST https://bezpecnost.csast.csas.cz/mep/fs/fl/oauth2/token?grant_type=authorization_code&client_id=slospo_b24&client_secret=AFuGQThqSVigAmbA0AgQLXZ22Qj6YvMd&code=2%2FpBeoC36sTjlL6zpEfsss8ZAjsWnzfB6BWlXdF83xp3pgQr6DknNrzHeLs3Yi4BV7&redirect_uri=https%3A%2F%2Fb244.apptest.slsp.sk%2Fweb%2Fmultibanking%2Fredirect HTTP/1.1
+Accept-Encoding: gzip,deflate
+content-type: application/x-www-form-urlencoded
+Content-Length: 0
+Host: bezpecnost.csast.csas.cz
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Keep-Alive: [timeout=20, max=100]
+Server: [Apache]
+Access-Control-Allow-Origin: [*]
+Access-Control-Allow-Methods: [GET, POST, PUT, DELETE, OPTIONS]
+Connection: [Keep-Alive]
+Date: [Tue, 19 Feb 2019 07:26:04 GMT]
+Access-Control-Allow-Headers: [Content-Type, X-Requested-With, Origin, Accept, Authorization]
+Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload]
+Cache-Control: [no-cache, no-store, must-revalidate]
+Vary: [Accept-Encoding,User-Agent]
+Set-Cookie: [TS0119fb52=018459ae7db14a90edc139963ef1a325f5bec1af853281f76179904bb2c007317acc1c013508c97a069b3ad91fc67eae3d077e30c8; Path=/]
+Expires: [-1]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Max-Age: [3600]
+Content-Length: [309]
+Content-Type: [application/json;charset=UTF-8]
+
+{"access_token":"3/fupabXlhDsFSYrUV5lLZpHArOhNn4Nhy5lHcpO3xdRgBFDU8yP7bw0DjKgyX6NbC","token_type":"bearer","expires_in":3599,"scope":"user.settings user.profile transactions.history payments.international payments.domestic","refresh_token":"1/4lOAomOJB1YDTIC7OSzJdJaXpku14eePpgCCFvyKs9thUH3eEti29cMpT3qkPeg1"}

@@ -1,0 +1,120 @@
+Status: UNKNOWN
+Time Taken: 250
+Size: 278
+Timestamp: Mon Feb 18 16:32:33 CET 2019
+TestStep: New Payment
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://www.csint.cz
+Method: POST
+StatusCode: 500
+URL: https://www.csint.cz/webapi/api/v1/psd2-aggregation/my/payments?bank=0800
+
+---------------- Request ---------------------------
+authorization: [3/SN8H5ojISGVgfxz4LHE6s4waee1FZR5trz4YaacqAavGLrtkjFKrnIBBk02ql9G2]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+web-api-key: [baf293b7-b836-4eb2-b3e8-9df0462d0dc2]
+Host: [www.csint.cz]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [1552]
+Content-Type: [application/json]
+
+POST https://www.csint.cz/webapi/api/v1/psd2-aggregation/my/payments?bank=0800 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+authorization: 3/SN8H5ojISGVgfxz4LHE6s4waee1FZR5trz4YaacqAavGLrtkjFKrnIBBk02ql9G2
+web-api-key: baf293b7-b836-4eb2-b3e8-9df0462d0dc2
+Content-Length: 1552
+Host: www.csint.cz
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+  "paymentIdentification": {
+    "endToEndIdentification": "190218071469535"
+  },
+  "amount": {
+    "instructedAmount": {
+      "value": 1.17,
+      "currency": "CZK"
+    }
+  },
+  "requestedExecutionDate": "2019-02-18",
+  "exchangeRateInformation": {
+    "rateType": "SALE"
+  },
+  "debtorAccount": {
+    "identification": {
+      "iban": "CZ5108000000000102902339",
+      "other": {
+        "identification": "190218071469535"
+      }
+    }
+  },
+  "creditorAccount": {
+    "identification": {
+      "iban": "CZ3855000000000099999933",
+      "other": {
+        "identification": "190218071469535"
+      }
+    }
+  },
+  "paymentTypeInformation": {
+    "instructionPriority": "NORM"
+  },
+  "remittanceInformation": {
+    "structured": {
+      "creditorReferenceInformation": {
+        "reference": [
+          "VS:501",
+          "KS:9",
+          "SS:1005"
+        ]
+      }
+    },
+    "unstructured": "Rent"
+  },
+  "chargeBearer": "SHA",
+  "creditorAgent": {
+    "financialInstitutionIdentification": {
+      "bic": "ABNYUS33",
+      "name": "New York Commercial Bank",
+      "clearingCode": "GBDSC",
+      "postalAddress": {
+        "streetName": "Merrick Avenue615",
+        "buildingNumber": "61511590-6644",
+        "postCode": "11590-6644",
+        "townName": "WESTBURY, NY",
+        "country": "US"
+      }
+    }
+  },
+  "creditor": {
+    "name": "1. wiena investment",
+    "postalAddress": {
+      "streetName": "Reisnerstrase",
+      "buildingNumber": "20",
+      "postCode": "1030",
+      "townName": "Wiena",
+      "country": "AT"
+    }
+  }
+}
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Access-Control-Expose-Headers: [cz-transactionid]
+Server: [Apache]
+Content-Encoding: [gzip]
+Connection: [close]
+Vary: [Accept-Encoding,User-Agent]
+#status#: [HTTP/1.1 500 Internal Server Error]
+Date: [Mon, 18 Feb 2019 15:32:33 GMT]
+cz-transactionId: [190218074021705]
+Content-Type: [application/json;charset=UTF-8]
+
+{"timestamp":"2019-02-18T16:32:34.025+0100","status":500,"error":"Internal Server Error","exception":"org.springframework.web.client.HttpClientErrorException","message":"strict servlet API: cannot call getWriter() after getOutputStream()","path":"/aggr-pisp/api/v1/my/payments"}
